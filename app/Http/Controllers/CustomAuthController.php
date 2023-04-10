@@ -44,7 +44,7 @@ class CustomAuthController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
             'phone' => 'required|min:10|max:10|unique:users',
-            'image' => 'required'
+            
         ]);
 
         $data = $request->all();

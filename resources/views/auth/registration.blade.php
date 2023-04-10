@@ -30,6 +30,7 @@
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
                                     @endif
                                 </div>
+
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="Phone" id="phone" class="form-control"
                                            name="phone" required>
@@ -37,7 +38,9 @@
                                         <span class="text-danger">{{ $errors->first('phone') }}</span>
                                     @endif
                                 </div>
-                                
+                                <div class="form-group mb-3">
+                                    <input type="hidden" id="image" value="default_image.png" class="form-control" name="image">                                  
+                                </div>
                                 <div class="form-group mb-3">
                                     <div class="checkbox">
                                         <label><input type="checkbox" name="remember"> Remember Me</label>
